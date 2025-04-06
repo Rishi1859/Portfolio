@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nishigandha Patel Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Rishikesh Patel</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Rishi.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span> <br>Rishikesh <br>Patel</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineering Student',
+						
+
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Student/Intern</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/rishikesh-patel1859" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Rishi1859" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/Icon.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Rishikesh Patel</span></p>
+										<p><span class="title-s">Job Role: </span> <span> Student/Intern</span></p>
+										<p><span class="title-s">Address: </span> <span>Pune</span></p>
+										<p><span class="title-s">College: </span> <span>PCCOER</span></p>
+
+									  </div>
+									</div>
+								  </div>
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>HTML & CSS</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Java</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Javascript</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Python</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>
+
+									Currently with expertise in designing, building, and optimizing data pipelines for scalable and efficient data processing. Proficient in Python, SQL, Airflow, I specialize in transforming raw data into actionable insights. My experience includes working with cloud platforms like AWS,and Azure, along with databases such as PostgreSQL, MongoDB.
+
+									I am passionate about big data, data architecture, and automation, ensuring seamless data flow for analytics and machine learning applications. Always eager to explore new technologies and enhance data infrastructure, I aim to build high-performance systems that drive data-driven decision-making. Let’s create impactful data solutions together!  </p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Student/Data Engineer</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Data Science,Cloud Computing,Finance,AI,Business Intelligence &amp; Ecommerce</span></li>
+									<li class="d-flex"><span>Education:</span> <span>3rd Year Engineering Student at Pimpri-Chinchwad College of Engineering and Research</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Programming Languages:</span> <span> C++, Java, Python, SQL, MongoDB, HTML, CSS, and Javascript</span></li>
+									<li class="d-flex"><span>Tools & Technologies:</span> <span>Eclipse, Git, Anaconda, Visual Studio Code, Jupyter Notebook &amp; PyCharm</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Complex Problem, Man-Handling, Critical Thinking, Effective Communication, Presentation &amp;  Problem-Solving</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Chess , Travelling</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/rishikesh-patel1859" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p></p>
+			<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="images/Rishikesh-Patel.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+		</div>
+		  
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Feb 2024-Mar 2024</span>
+						<h2>Intern</h2>
+						<span class="position">Pantech eLearning</span>
+						<p class="mt-4">
+							Pantech eLearning is an online learning platform that offers technical training, internships, workshops, and certification courses in various fields like Artificial Intelligence, Machine Learning, Data Science, IoT, Embedded Systems, and Full-Stack Development. It provides hands-on projects, industry-relevant curriculum, and mentorship to help students and professionals gain practical skills. The platform collaborates with leading universities and companies to bridge the gap between academic learning and industry demands.
+							<ul>
+								<li>Learned and Understand AWS architecture, services, and deployment models..</li>
+								<li>Worked on setting up virtual servers (EC2) and storage solutions (S3).</li>
+								<li>Implemented serverless computing using AWS Lambda.</li>
+								<li>Configured databases with AWS RDS and user management with IAM.</li>
+								<li> Built and deployed a mini-project using AWS cloud services.</li>
+							</ul>
+						</p>
+					</div>
+		
+
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jan 2024-Feb 2024</span>
+						<h2>Intern</h2>
+						<span class="position">Pantech eLearning</span>
+						<p class="mt-4">
+							Pantech eLearning is an online learning platform that offers technical training, internships, workshops, and certification courses in various fields like Artificial Intelligence, Machine Learning, Data Science, IoT, Embedded Systems, and Full-Stack Development. It provides hands-on projects, industry-relevant curriculum, and mentorship to help students and professionals gain practical skills. The platform collaborates with leading universities and companies to bridge the gap between academic learning and industry demands.
+							<ul>
+								<li>Gained various knowledge and implemented the concepts of Python,Pandas,Numpy,Matplotlib and Scikit-learn.</li>
+								<li>Data preprocessing and cleaning using Pandas & NumPy.</li>
+								<li>Data visualization with Matplotlib & Seaborn.</li>
+								<li>Machine learning model training with Scikit-learn.</li>
+								<li> Gained practical experience in data analysis, ML model building, and visualization techniques.</li>
+							</ul>
+						</p>					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Dec 2023-Feb 2024</span>
+						<h2>Cloud Data Engineer Intern</h2>
+						<span class="position">DIGII-TECH</span>
+						<p class="mt-4">Digitech Systems is a prominent IT company specializing in cloud computing and content management solutions.They have been at the forefront of technological innovation, offering a suite of products designed to enhance information management and business process automation. 
+							<ul>
+								<li>Learned cloud architecture, virtualization, and networking concepts.</li>
+								<li>Deployed applications using AWS EC2, S3, Lambda and Google Cloud.</li>
+								<li>Worked with Docker & Kubernetes for containerization and orchestration.</li>
+								<li>Implemented serverless computing and cloud security best practices.</li>
+								<li>Hands-on experience in cloud-based project deployment using Google Cloud.</li>							
+								<li>Gained expertise knowledge in cloud infrastructure, deployment strategies, and containerized applications.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jun 2022-Jul 2022</span>
+						<h2>Intern</h2>
+						<span class="position">MRND Lab PVT.LTD</span>
+						<p class="mt-4">MRND LAB 
+							PVT.LTD creates IT and software solutions that anticipate and effectively respond to a
+							rapidly changing global business environment. Focused on building long-term relationships, 
+							MRND LAB PVT.LTD enables customers to capture market opportunities and consolidate their
+							leadership position. 
+							<ul>
+								<li>Learned about various HTML,CSS styling pages according the given meta design.Designed numerous web pages with effective and highly defined way.</li>
+								<li>Validating web pages using the Javascript with script tags and various javascript concepts.</li>
+								<li>Learned the JSP(Java Server Pages) and how to run backend java program on the server.</li>
+								<li>Deployed the project to the server using Webhoost000.</li>
+								<li>Enhanced the learning skills with various Javascript framework such as React,Angular,Vite.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2026(Current:Third Year)</span>
+    					<h2>Bachelors in Computer Engineering</h2>
+    					<span class="position">Savitribai Phule Pune University</span>
+    					<p class="mt-4" >CGPA:9.18</p>
+						<p>Achievements:
+							<ul>
+								<li>Participant at Cavista Hackathon 2025</li>
+								<li> Inter-College Smart india Hackathon Participant 2024</li>
+							</ul>
+						</p>						
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2023</span>
+    					<h2>Diploma in Computer Engineering</h2>
+    					<span class="position">Maharashtra State Board of Technical Education</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+						<p>Achievements:
+							<ul>
+								<li>D1 Zonal Chess Competition Runner-Up 2023 </li>
+							</ul>
+						</p>
+					</div>
+				</div>
+    		</div>
+
+    		
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample projects on SQL, Python, Java, Javascript !!!</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Rishi1859/AI-Text-Guard.git" class="block-20 zoom-effect" style="background-image: url('images/AI.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Rishi1859/AI-Text-Guard.git">AI Text-Guard</a></h3>
+                <p>AI Text Guard is an advanced tool that detects AI-generated content with over 99% accuracy. It helps ensure the authenticity of written material and offers features like plagiarism detection and text humanization.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Rishi1859/Traffic-Management-System.git" class="block-20 zoom-effect" style="background-image: url('images/Traffic.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Rishi1859/Traffic-Management-System.git">Traffic Management System</a></h3>
+                <p>Developed an Traffic Management System using C++,SQL Server improving various vehicle classification and manipulation traffic using enhanced upgradation in signals .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Rishi1859/Face-Liveness-and-Anti-Spoofing.git" class="block-20 zoom-effect" style="background-image: url('images/AIimage.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Rishi1859/Face-Liveness-and-Anti-Spoofing.git">Face-Liveness and Anti Spoofing</a></h3>
+                <p>Face liveness and anti-spoofing is used to detect whether a face presented to a system is live or fake. These methods enhance security in facial recognition systems by preventing unauthorized access through spoofing attacks with enhanced efficiency</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/AIFace.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#">Face Recognition and Object Detection using OpenCV</a></h3>
+				  <p>Developed project involve using computer vision techniques to identify and locate faces or objects in images or video streams build using Python,OpenCV,SQL.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Rishi1859/Chatbot.git" class="block-20 zoom-effect" style="background-image: url('images/Chatbot1.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Rishi1859/Chatbot.git">Chatbot</a></h3>
+				  <p>Chatbot is a software application that can simulate human conversation through text or voice. It typically uses natural language processing (NLP) and machine learning to understand user inputs and respond intelligently.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" class="block-20 zoom-effect" style="background-image: url('images/onestop.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#">One Stop Marketplace</a></h3>
+				  <p>One-Stop marketplace is an platform that offers a wide range of products or services in one place, allowing customers to fulfill multiple needs without visiting multiple vendors. It simplifies shopping, saves time, and enhances convenience for users.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="12">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I am passionate job seeker about optimizing processes and leveraging data to drive impactful solutions as a Student Intern at job positions like SQL Developer, Data Engineer.</h4>
+						<br>
+						<p><a href="https://github.com/Rishi1859" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Pune</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://9783758489">+ 91 8669641859</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:rishikeshpatel1859@gmail.com">rishikeshpatel1859@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="images/Rishikesh-Patel.pdf">Click Here > Resume</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/1isBSdp_BFSU7dcn8xWhr2eKyLI55ZYhLDPE2k1Fw1Pk/edit" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="mailto:rishikeshpatel1859@gmail.com"><span class="icon-envelope"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishikesh-patel1859"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://github.com/Rishi1859"><span class="icon-github"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rrishii.19/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
